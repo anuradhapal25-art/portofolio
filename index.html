@@ -1,78 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
+html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anuradha Pal — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <div class="brand">
+          <h1 class="name">Anuradha Pal</h1>
+          <p class="tagline">Aspiring Web Developer</p>
+        </div>
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#career">Career Goal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    header {
-      background: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
+    <main>
+      <section id="hero" class="hero container">
+        <div class="hero-card">
+          <div class="hero-left">
+            <h2>Hello — I&apos;m Anuradha</h2>
+            <p class="lead">17 years · Jhansi, Uttar Pradesh · 1st year college (2025)</p>
+            <p class="brief">I love coding, enjoy reading, and creating creative things. I&apos;m learning web development and want to become a professional Web Developer.</p>
+            <div class="cta-row">
+              <a class="btn primary" href="#contact">Get in touch</a>
+              <a class="btn ghost" href="#skills">My skills</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <ul class="summary-list">
+              <li><strong>Education:</strong> Completed 12th in 2025 · 1st year college</li>
+              <li><strong>Experience:</strong> Taught small kids</li>
+              <li><strong>Career Goal:</strong> Become a professional Web Developer</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    .profile-pic {
-      text-align: center;
-      margin: 20px 0;
-    }
+      <section id="about" class="section container">
+        <h3 class="section-title">About Me</h3>
+        <div class="card">
+          <p>I love coding, I enjoy reading and books, I like creating creative things, and I want to become a web developer. I&apos;m currently studying in my 1st year of college (2025) and continuously learning web technologies.</p>
+        </div>
+      </section>
 
-    .profile-pic img {
-      width: 200px;
-      height: auto;
-      border-radius: 50%;
-      border: 3px solid #4CAF50;
-    }
+      <section id="skills" class="section container">
+        <h3 class="section-title">Skills</h3>
+        <div class="card skills-grid">
+          <div class="skill">Basic HTML</div>
+          <div class="skill">Basic CSS</div>
+          <div class="skill">Basic web development</div>
+        </div>
+      </section>
 
-    section {
-      padding: 20px;
-    }
+      <section id="hobbies" class="section container">
+        <h3 class="section-title">Hobbies</h3>
+        <div class="card">
+          <ul>
+            <li>Reading books</li>
+            <li>Coding</li>
+            <li>Exploring creative ideas</li>
+          </ul>
+        </div>
+      </section>
 
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hi, I’m Anuradha 👋</h1>
-    <p>Welcome to my portfolio website!</p>
-  </header>
+      <section id="career" class="section container">
+        <h3 class="section-title">Career Goal</h3>
+        <div class="card">
+          <p>My career goal is to become a professional Web Developer — building accessible, responsive, and well-designed websites and applications.</p>
+        </div>
+      </section>
 
-  <!-- Correct image -->
-  <div class="profile-pic">
-    <img src="https://i.postimg.cc/W3ZTQfmN/Whats-App-Image-2025-09-04-at-10-36-36.jpg" alt="Anuradha image">
-  </div>
+      <section id="contact" class="section container">
+        <h3 class="section-title">Contact</h3>
+        <div class="card contact-grid">
+          <form class="contact-form" action="#" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m learning web development and love creating websites.</p>
-  </section>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your.email@example.com" />
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Project 1 – Personal Portfolio</li>
-      <li>Project 2 – Sample Website</li>
-    </ul>
-  </section>
+            <label for="github">GitHub</label>
+            <input id="github" name="github" type="url" placeholder="https://github.com/your-username" />
 
-  <footer>
-    <p>Connect with me: 
-      <a href="#">GitHub</a> | 
-      <a href="#">LinkedIn</a>
-    </p>
-  </footer>
-</body>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write a short message..."></textarea>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h4>Reach out</h4>
+            <p>Feel free to copy the placeholders and replace them with your real contact details.</p>
+            <ul>
+              <li><strong>Email:</strong> your.email@example.com</li>
+              <li><strong>GitHub:</strong> github.com/your-username</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year">2025</span> Anuradha Pal. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
