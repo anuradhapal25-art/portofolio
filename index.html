@@ -1,123 +1,202 @@
-html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anuradha Pal — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-row">
-        <div class="brand">
-          <h1 class="name">Anuradha Pal</h1>
-          <p class="tagline">Aspiring Web Developer</p>
-          <img src="https://i.postimg.cc/mrsbjKr4/Screenshot-from-2025-09-17-16-23-52.png">
-        </div>
-        <nav class="main-nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#career">Career Goal</a>
-          <a href="#contact">Contact</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuradha Pal - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Anuradha Pal</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-      </div>
     </header>
 
-    <main>
-      <section id="hero" class="hero container">
-        <div class="hero-card">
-          <div class="hero-left">
-            <h2>Hello — I&apos;m Anuradha</h2>
-            <p class="lead">17 years · Jhansi, Uttar Pradesh · 1st year college (2025)</p>
-            <p class="brief">I love coding, enjoy reading, and creating creative things. I&apos;m learning web development and want to become a professional Web Developer.</p>
-            <div class="cta-row">
-              <a class="btn primary" href="#contact">Get in touch</a>
-              <a class="btn ghost" href="#skills">My skills</a>
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Anuradha Pal</h1>
+                <p>Beginner Web Developer | Learner | Dreamer</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">See My Work</a>
+                </div>
             </div>
-          </div>
-          <div class="hero-right">
-            <ul class="summary-list">
-              <li><strong>Education:</strong> Completed 12th in 2025 · 1st year college</li>
-              <li><strong>Experience:</strong> Taught small kids</li>
-              <li><strong>Career Goal:</strong> Become a professional Web Developer</li>
-            </ul>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="about" class="section container">
-        <h3 class="section-title">About Me</h3>
-        <div class="card">
-          <p>I love coding, I enjoy reading and books, I like creating creative things, and I want to become a web developer. I&apos;m currently studying in my 1st year of college (2025) and continuously learning web technologies.</p>
-        </div>
-      </section>
-
-      <section id="skills" class="section container">
-        <h3 class="section-title">Skills</h3>
-        <div class="card skills-grid">
-          <div class="skill">Basic HTML</div>
-          <div class="skill">Basic CSS</div>
-          <div class="skill">Basic web development</div>
-        </div>
-      </section>
-
-      <section id="hobbies" class="section container">
-        <h3 class="section-title">Hobbies</h3>
-        <div class="card">
-          <ul>
-            <li>Reading books</li>
-            <li>Coding</li>
-            <li>Exploring creative ideas</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="career" class="section container">
-        <h3 class="section-title">Career Goal</h3>
-        <div class="card">
-          <p>My career goal is to become a professional Web Developer — building accessible, responsive, and well-designed websites and applications.</p>
-        </div>
-      </section>
-
-      <section id="contact" class="section container">
-        <h3 class="section-title">Contact</h3>
-        <div class="card contact-grid">
-          <form class="contact-form" action="#" novalidate>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="your.email@example.com" />
-
-            <label for="github">GitHub</label>
-            <input id="github" name="github" type="url" placeholder="https://github.com/your-username" />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Write a short message..."></textarea>
-
-            <div class="form-actions">
-              <button class="btn primary" type="submit">Send Message</button>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">AP</div>
+                <div class="about-text">
+                    <h3>Hello! I'm Anuradha Pal</h3>
+                    <p>I am Anuradha Pal, 17 years old, from Jhansi. I completed my 12th in Art stream in 2025 and currently pursuing BA at Sant Siromadi. I love coding, problem-solving, and my dream is to become a software engineer.</p>
+                    <h4>My Hobbies:</h4>
+                    <div class="hobbies">
+                        <span class="hobby-tag">Coding</span>
+                        <span class="hobby-tag">Problem Solving</span>
+                        <span class="hobby-tag">Watching Movies</span>
+                        <span class="hobby-tag">Playing Games</span>
+                    </div>
+                </div>
             </div>
-          </form>
-
-          <div class="contact-info">
-            <h4>Reach out</h4>
-            <p>Feel free to copy the placeholders and replace them with your real contact details.</p>
-            <ul>
-              <li><strong>Email:</strong> your.email@example.com</li>
-              <li><strong>GitHub:</strong> github.com/your-username</li>
-            </ul>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <p>© <span id="year">2025</span> Anuradha Pal. All rights reserved.</p>
-      </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Git/GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Communication</span>
+                        <span class="skill-item">Teamwork</span>
+                        <span class="skill-item">Problem Solving</span>
+                        <span class="skill-item">Adaptability</span>
+                        <span class="skill-item">Time Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">🌐</div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript showcasing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">📱</div>
+                    <div class="project-content">
+                        <h3>Responsive Landing Page</h3>
+                        <p>A modern, mobile-first landing page design with smooth animations and clean user interface.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">🎮</div>
+                    <div class="project-content">
+                        <h3>Interactive Web Game</h3>
+                        <p>A fun browser-based game built with vanilla JavaScript, featuring engaging gameplay and responsive design.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3>Bachelor of Arts (BA)</h3>
+                    <div class="year">2025 - Present</div>
+                    <p>Currently pursuing Bachelor of Arts at Sant Siromadi, focusing on developing analytical and communication skills.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Higher Secondary Education (12th Arts)</h3>
+                    <div class="year">2025</div>
+                    <p>Completed 12th grade in Arts stream, building a strong foundation in humanities and creative thinking.</p>
+                </div>
+                <div class="education-item">
+                    <h3>NavGurukul - AI & Coding Training</h3>
+                    <div class="year">Ongoing</div>
+                    <p>Intensive training program in Artificial Intelligence and coding, learning modern web development technologies and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>anuradhapal25@navgurukul.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>📱</i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>8840923914</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>📍</i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Jhansi, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank">🐙</a>
+                        <a href="#" target="_blank">💼</a>
+                        <a href="#" target="_blank">🐦</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always excited to work on new projects and collaborate with amazing people. Feel free to reach out if you have any opportunities or just want to say hello!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anuradha Pal. All rights reserved. Made with ❤️</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
